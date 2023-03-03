@@ -21,7 +21,7 @@
         
             <br>
                Nome de Usuário:<br><br>               
-              <input type="text" name="email" placeholder="Insere seu nome de usuario"><br><br>
+              <input type="text" name="username" placeholder="Insere seu nome de usuario"><br><br>
                Senha: <br><br>
              <input type="password" name="password" placeholder="Insere a sua Senha"><br><br>            
              <input type="submit" name="submit" value="Entrar" class="btn">
@@ -37,20 +37,20 @@
 if(isset($_POST['submit'])){
    //process for login
    //1. Get the Data from login form
-   $email =$_POST['email'];
+   $username =$_POST['username'];
    $password =md5($_POST['password']);
   
 //2. SQL to check whether the user with username and password exists or not
-$sql = "SELECT * FROM tb_admin WHERE email='$email' AND PASSWORD =$password";
+$sql ="SELECT * FROM  tb_admin WHERE username='$username' AND PASSWORD= '$password'";
 
 //3. Execute the query
-$res =mysqli_query($conn,$sql);
+$res =mysqli_query($conn, $sql);
 
 //4. Count rows to check whether the user exists or not
 $count =mysqli_num_rows($res);
 if ($count==1) {
     //user available and login success
-     $_SESSION['login'] ="<div class='sucesso'>Bem-vindo</div>";
+     $_SESSION['login'] ="<div class='successo'>Bem-vindo</div>";
     //Redirect to Home page/dashboard
     header('location:'.SITEURL.'admin/');
     }    
