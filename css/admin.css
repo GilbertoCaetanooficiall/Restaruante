@@ -247,11 +247,13 @@
         }
 
         /*CSS for login*/
+        
         .login{
             background-color: white;
             border: 1px solid grey;
             width: 30%;
             margin: 5% auto;
+            border-radius:10%;
         }
 
         .btn {
@@ -262,5 +264,6 @@
             font-size: 18px;
             cursor: pointer;
             margin: 12px 0;
+            border-radius:10%;
         }
        

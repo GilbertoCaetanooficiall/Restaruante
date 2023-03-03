@@ -8,14 +8,18 @@
 <body Background="../images/bg.JPG">
     
     <div class="login">
-    <br><br><br>
+    <br><br>
     <?php
     if (isset($_SESSION['login'])) {
         echo $_SESSION['login'];
         unset($_SESSION['login']);
     }
+    if (isset($_SESSION['no-login-message'] )) {
+        echo $_SESSION['no-login-message'];
+        unset($_SESSION['no-login-message']);
+    }
     ?>
-    <br> <br>
+    
         <h1 class="text-center">Login</h1>
         <form action="" method="post" class = "text-center">
         
@@ -51,7 +55,8 @@ $count =mysqli_num_rows($res);
 if ($count==1) {
     //user available and login success
      $_SESSION['login'] ="<div class='successo'>Bem-vindo</div>";
-    //Redirect to Home page/dashboard
+     $_SESSION['user'] = $username;
+     //Redirect to Home page/dashboard
     header('location:'.SITEURL.'admin/');
     }    
 else {

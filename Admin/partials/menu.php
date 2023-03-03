@@ -1,4 +1,8 @@
-<?php include('../config/constants.php');?>
+<?php 
+include('../config/constants.php');
+include('login-check.php');
+?>
+
 <!DOCTYPE html>
 <html lang="pt-pt">
 <head>
@@ -18,7 +22,8 @@
         <li><a href="manage-admin.php">Admin</a></li>
         <li><a href="manage-category.php">Category</a></li>
         <li><a href="manage-food.php">Food</a></li>
-        <li><a href="manage-order.php">Order</a></li>  
+        <li><a href="manage-order.php">Order</a></li>
+        <li><a href="logout.php">Sair</a></li>    
     </ul>
       </div>
    </div>
