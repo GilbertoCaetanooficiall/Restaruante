@@ -160,7 +160,7 @@
         }
         
         .btn-primary:hover{
-            background-color: #3742fa;
+            background-color: darkslateblue;
         }
         
         .btn-secondary{
@@ -213,10 +213,10 @@
         .menu ul li a{
             text-decoration: none;
             font-weight: bold;
-            color:#ff6b81;
+            color:steelblue;
         }
         .menu ul li a:hover{
-            color:#ff4757;
+            color:darkslateblue;
         }
         
         
@@ -241,13 +241,26 @@
         
         /*css for footer*/
         .footer{
-        background-color: #ff4757;
-        color: white;
+        background-color: slategrey;
+        color:white;
+       
         }
 
         /*CSS for login*/
         .login{
+            background-color: white;
             border: 1px solid grey;
             width: 30%;
             margin: 5% auto;
         }
+
+        .btn {
+            width: 10% auto;
+            background-color: rgba(51, 248, 94, 0.986);
+            color: white;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 12px 0;
+        }
+       

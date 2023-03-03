@@ -45,8 +45,8 @@ if (isset($_SESSION['update'])) {
      <table class="tbl-full">
         <tr>
             <th>S.N</th>
-            <th>Nome Completo</th>
-            <th>Nome de usuario</th>
+            <th>Nome de Usuário</th>
+            <th>Email</th>
             <th>Contacto</th>
             <th>Ação</th>
         </tr>

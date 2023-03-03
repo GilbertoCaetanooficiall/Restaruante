@@ -15,7 +15,7 @@ if(isset($_SESSION['add'])){
         <form action="" method="post">
         <table class="tbl-30">
             <tr>
-                <td>Nome completo</td>
+                <td>Nome de Usuário</td>
                 <td><input type="text" name="nome_completo" placeholder="insere seu nome"></td>
             </tr>
             <tr>
