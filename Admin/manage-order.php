@@ -1,7 +1,7 @@
 <?php include('partials/menu.php')?>
 <div class="main-content">
 <div class="wapper">
-    <h1>Manage order</h1>
+    <h1>Gerenciar encomendas</h1>
 
     <table class="tbl-full">
         <tr>

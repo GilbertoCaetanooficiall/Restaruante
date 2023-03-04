@@ -1,7 +1,7 @@
 <?php include('partials/menu.php')?>
 <div class="main-content">
 <div class="wapper">
-    <h1>Manage food</h1>
+    <h1>Gerenciar comida</h1>
     <br /> <br />  <br />
     <!-- criando botão para adicionar administrador-->
     <a href="#" class="btn-primary">Adicionar comida</a>

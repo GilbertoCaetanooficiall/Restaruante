@@ -1,10 +1,10 @@
 <?php include('partials/menu.php')?>
 <div class="main-content">
 <div class="wapper">
-    <h1>Manage category</h1>
+    <h1>Gerenciando categorias</h1>
     <br /> <br />  <br />
     <!-- criando botão para adicionar administrador-->
-    <a href="#" class="btn-primary">Nova categoria</a>
+    <a href="<?php echo SITEURL;  ?>admin/add-category.php" class="btn-primary">Nova categoria</a>
     <br /> <br />  <br />
     <table class="tbl-full">
         <tr>
