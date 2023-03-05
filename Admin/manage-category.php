@@ -2,7 +2,7 @@
 <div class="main-content">
 <div class="wapper">
     <h1>Gerenciando categorias</h1>
-    < <br />
+    <br/>
     <br><br>
         <?php
           if (isset($_SESSION['add'])) {
@@ -57,7 +57,9 @@
                 <?php
                       if($image_name !=""){
                      ?>
-                        <img  src="<?php SITEURL ;?>images/categories/<?php echo $image_name; ?>" width="10%">
+                      
+                      
+                        <img  src="<?php echo SITEURL. 'images/categories/'.$image_name;?>" width="10%">
                     <?php 
                       
                     }

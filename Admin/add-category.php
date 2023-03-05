@@ -103,7 +103,7 @@
            $sext = end(explode('.', $image_name));
 
            //rename the image
-           $image_name ="categoria de comidas_".rand(000,999).'.'.$sext;
+           $image_name ="categoria_de_comidas_".rand(000,999).'.'.$sext;
 
            $source_path=$_FILES['image']['tmp_name'];
            $destination_path="../images/categories/".$image_name;  
