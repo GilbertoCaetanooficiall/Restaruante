@@ -35,6 +35,15 @@
     color: white;
 }
 
+.success{
+    padding: 2%;
+    color: green;
+}
+
+.error{
+    padding: 2%;
+    color:red;
+}
 .clearfix{
     clear: both;
     float: none;

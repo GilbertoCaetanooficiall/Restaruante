@@ -91,11 +91,11 @@ if (isset($_POST['submit'])) {
 
      if($res == true){
 
-        $_SESSION['delete'] = "<div class= 'successo'> Admin foi actualizado com sucesso.</div>";
+        $_SESSION['update'] = "<div class= 'successo'> Admin foi actualizado com sucesso.</div>";
         header('location:'.SITEURL.'admin/manage-admin.php');
     }else {
         echo "Falhou na tarefa";
-        $_SESSION['delete'] = "<div class= 'error'>Falhou na tarefa.</div>";
+        $_SESSION['update'] = "<div class= 'error'>Falhou na tarefa.</div>";
         header('location:'.SITEURL.'admin/manage-admin.php');
     }
 }

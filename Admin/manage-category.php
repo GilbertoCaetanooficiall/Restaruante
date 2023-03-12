@@ -9,13 +9,37 @@
             echo $_SESSION['add'];
             unset($_SESSION['add']);
           }
+          if (isset($_SESSION['delete'])) {
+            echo $_SESSION['delete'];//displaying session message
+            unset($_SESSION['delete']);//Removing displaying session message
+         }
+         if (isset($_SESSION['remove'])) {
+            echo $_SESSION['remove'];//displaying session message
+            unset($_SESSION['remove']);//Removing displaying session message
+         }
+         if (isset($_SESSION['category-not-found'])) {
+            echo $_SESSION['category-not-found'];//displaying session message
+            unset($_SESSION['category-not-found']);//Removing displaying session message
+         }
+         if (isset($_SESSION['update'])) {
+            echo $_SESSION['update'];//displaying session message
+            unset($_SESSION['update']);//Removing displaying session message
+         }
+         if (isset($_SESSION['upload'])) {
+            echo $_SESSION['upload'];//displaying session message
+            unset($_SESSION['upload']);//Removing displaying session message
+         }
+         if (isset($_SESSION['falied-to-remove'])) {
+            echo $_SESSION['falied-to-remove'];//displaying session message
+            unset($_SESSION['falied-to-remove']);//Removing displaying session message
+         }
         ?>
         <br><br>
     <!-- criando botão para adicionar administrador-->
     <a href="<?php echo SITEURL;  ?>admin/add-category.php" class="btn-primary">Nova categoria</a>
     <br /> <br />  <br />
     <table class="tbl-full">
-        <tr>
+        <tr class="abc">
             <th>S.N</th>
             <th>Titutlo</th>
             <th>imagem</th>
@@ -72,8 +96,8 @@
             <td><?php echo $featured;?></td>
             <td><?php echo $active;?></td>
             <td>
-            <a href="#" class="btn-secondary"> Actualizar</a>
-            <a href="#" class="btn-third"> Deletar</a>
+            <a href="<?php echo SITEURL.'admin/update-category.php?id_categoria='.$id_categoria;?>" class="btn-secondary"> Actualizar</a>
+            <a href="<?php echo SITEURL.'admin/delete-category.php?id_categoria='.$id_categoria. '& nome_imagem=' .$image_name;?>" class="btn-third"> Deletar</a>
             </td>
         
         </tr>

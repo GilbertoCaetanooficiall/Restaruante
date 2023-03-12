@@ -89,14 +89,6 @@
         padding: 1%;
     }
     
-    .menu ul li a{
-        text-decoration: none;
-        font-weight: bold;
-        color:#ff6b81;
-    }
-    .menu ul li a:hover{
-        color:#ff4757;
-    }
     
     
     /*css for main content*/
@@ -209,7 +201,13 @@
             display: inline;
             padding: 1%;
         }
+        h1{
+            color:rgb(34, 111, 173);
+        }
         
+        .abc{
+            color:rgb(82, 32, 129);
+        }
         .menu ul li a{
             text-decoration: none;
             font-weight: bold;

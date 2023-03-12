@@ -43,7 +43,7 @@ if (isset($_SESSION['update'])) {
     <a href="add-admin.php" class="btn-primary">Novo Admin</a>
     <br /> <br />  <br />
      <table class="tbl-full">
-        <tr>
+        <tr class="abc">
             <th>S.N</th>
             <th>Nome de Usuário</th>
             <th>Email</th>

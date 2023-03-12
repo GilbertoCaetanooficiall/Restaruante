@@ -66,9 +66,9 @@ if (isset ($_POST['submit'])) {
             password='$password'
             ";
         //Executing query and saving data into database
-      $res = mysqli_query($conn, $sql) or die(mysqli_error());
+      $res = mysqli_query($conn, $sql) or die(mysqli_error($conn, $sql));
 
-      if ($full_name &&  $email && $contacto && $password !="") {
+      
       
         // Check wether the query is executed  data is inserted or not and display agropirate  message
        if($res==true){
@@ -77,10 +77,7 @@ if (isset ($_POST['submit'])) {
         $_SESSION['add']  = "<div class= 'successo'> Admin foi adicionado com sucesso.</div>";
          //redirect page to manage admin
           header("location:". SITEURL .'admin/manage-admin.php');   
-      }
-      
-
-    
+       
 }
        else{
         //echo("Desculpe, verifique a query");
@@ -88,6 +85,6 @@ if (isset ($_POST['submit'])) {
         $_SESSION['add']  = "<div class= 'error'> Falhou em adicionar um novo Admin nenhum campo pode estar vazio.</div>";
        //redirect page to manage admin
         header("location:". SITEURL .'admin/add-admin.php');
-     }
+       }
     }
 ?>
